@@ -3,7 +3,6 @@ const app = express()
 const port = 3000
 const expressLayouts = require("express-ejs-layouts")
 const bodyParser = require('body-parser')
-const methodOverride = require('method-override') // uninstall
 
 const DATABASE_URL = "mongodb+srv://Ollko:Ollko0323@alex.nwv91uy.mongodb.net/?retryWrites=true&w=majority"
 
