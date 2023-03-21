@@ -1,0 +1,30 @@
+<h2>Search:</h2>
+<form action="/show" method="GET">
+    <label>Question 1</label><br>
+    <input id="question1" name="question1" type="radio" value="a1" required></input>
+    <label for="question1">a1</label>
+    <input id="question1" name="question1" type="radio" value="a2"></input>
+    <label for="question1">a2</label>
+    <input id="question1" name="question1" type="radio" value="a3"></input>
+    <label for="question1">a3</label>
+
+    <br>
+    <button type="submit">Show</button>
+</form>
+
+<h2>Results: </h2>
+
+<% responses.forEach(r=>{ %>
+    <span>
+        <%= r.id%>:
+    </span><span>
+        <%= r.answer1%>
+            <%= r.answer2%>
+                <%= r.answer3%>
+                    <%= r.answer4%>
+                        <%= r.answer5%>
+                            <%= r.answer6%>
+                                <%= r.answer7%>
+                                    <%= r.answer8%>
+    </span><br>
+    <% }) %>

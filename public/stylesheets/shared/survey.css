@@ -1,0 +1,135 @@
+:root {
+    --transformation: 0
+}
+
+.wrapper {
+    position: relative;
+    margin: 4% auto;
+    width: 90vw;
+    height: 60vh;
+    border: 1px var(--border-color) solid;
+    overflow: hidden;
+    box-shadow: 6px 7px 16px 0px var(--box-shadow-color);
+}
+
+.contrainer {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-out;
+    transform: translateY(calc(var(--transformation)*-100%));
+}
+
+.question {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+}
+
+.answers,
+.fat {
+    margin-top: 1vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    gap: 1rem;
+    justify-items: start;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fat {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* btns */
+.btn,
+#counter {
+    margin: 0;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    color: var(--first-color);
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    box-shadow: 0 1px 3px 0 var(--accent-color), 0 1px 2px 0 var(--accent-color);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+.btn:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.btn:focus-visible {
+    box-shadow: none;
+}
+
+.btn-wrapper {
+    position: absolute;
+    left: 5%;
+    bottom: 2%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* submit */
+#submit,
+.submit {
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: var(--accent-color) 0 2px 4px, var(--accent-color) 0 7px 13px -3px, var(--second-color) 0 -3px 0 inset;
+    color: var(--first-color);
+    cursor: pointer;
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+#submit:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+#submit-container {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h4#missing {
+    margin: 3%;
+    display: none;
+}

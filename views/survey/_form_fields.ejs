@@ -1,0 +1,127 @@
+<%if(locals.errorMessage !=null){%>
+    <%=locals.errorMessage%>
+        <%} %>
+            <div class="wrapper">
+                <div class="contrainer">
+
+                    <div class="question">
+                        <p>Jakiego języka obecego jako drugiego uczysz się obecnie w szkole?</p>
+                        <div class="answers">
+                            <% for(const question of questions.question1){ %>
+                                <label>
+                                    <input name="1" type="radio" value="<%=question %>" required>
+                                    <span>
+                                        <%=question%>
+                                    </span></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Jakiego języka obcego jako drugiego chiałbyć/chciałabyś się uczyć najbardziej gdybyś
+                            miał/miała
+                            nieograniczony wybór?
+                        </p>
+                        <div class="answers">
+                            <% for(const question of questions.question2){ %>
+                                <label>
+                                    <input name="2" type="radio" value="<%=question %>" required>
+                                    <%=question%></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Jakiego języka obcego jako drugieo uczyłeś/uczyłaś się w szkole podstawowej?</p>
+                        <div class="answers">
+                            <% for(const question of questions.question3){ %>
+                                <label>
+                                    <input name="3" type="radio" value="<%=question %>" required>
+                                    <%=question%></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Czy uczyłeś/uczyłaś się w szkole podstawowej tego samego języka obcego jako
+                            drugiego
+                            którego obecnie uczysz sie w szkole (również jako drugiego)?</p>
+                        <div class="answers">
+                            <% for(const question of questions.question4){ %>
+                                <label>
+                                    <input name="4" type="radio" value="<%=question %>" required>
+                                    <%=question%></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Czy w obeznej szkole jest język obcy jako drugi którego
+                            chciałbyś/chciałabyś się uczyć.</p>
+                        <div class="answers">
+                            <% for(const question of questions.question5){ %>
+                                <label>
+                                    <input name="5" type="radio" value="<%=question %>" required>
+                                    <span>
+                                        <%=question%>
+                                    </span></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <p>Jaka była Twoja ocena z języka obcego jako drugie na koniec
+                            ostatniego semestru?</p>
+                        <div class="answers">
+                            <% for(const question of questions.question6){ %>
+                                <label>
+                                    <input name="6" type="radio" value="<%=question %>" required>
+                                    <%=question%></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question ">
+                        <p>Co skłoniło Cię do wybrania tego a nie innego jezyka obcego
+                            jako drugiego?</p>
+                        <div class="answers fat">
+                            <% for(const question of questions.question7){ %>
+                                <label>
+                                    <input name="7" type="radio" value="<%=question %>" required>
+                                    <span>
+                                        <%=question%>
+                                    </span> </input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+
+                    <div class="question ">
+                        <p>Co sprawia, że dany język wydaje Ci się
+                            atrakcyjny?</p>
+                        <div class="answers fat">
+                            <% for(const question of questions.question8){ %>
+                                <label>
+                                    <input name="8" type="radio" value="<%=question %>" required>
+                                    <span>
+                                        <%=question%>
+                                    </span></input>
+                                </label>
+                                <%}%>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="btn" id="left">
+                        Poprzedni</button>
+                    <span id="counter"></span>
+                    <button class="btn" id="right">Następny
+                    </button>
+                </div>
+            </div>
