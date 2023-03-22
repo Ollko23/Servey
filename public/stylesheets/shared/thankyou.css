@@ -13,37 +13,39 @@
 blockquote {
     width: 90vw;
     margin: 5% auto;
+    border-left: 0.2em solid var(--accent-color);
+    padding-left: 1em;
 }
 
 .sidekick {
     position: relative;
-    padding-left: 1em;
-    border-left: 0.2em solid var(--accent-color);
     font-size: 1.8em;
     line-height: 1.2em;
     font-weight: 100;
 }
 
-.sidekick:before,
-.sidekick:after {
+.sidekick::before,
+.sidekick::after {
     color: var(--accent-color);
-    font-size: 34px;
+    font-size: 2rem;
 }
 
-.sidekick:before {
+.sidekick::before {
     content: '\201e'
 }
 
-.sidekick:after {
+.sidekick::after {
     content: '\201c';
 }
 
-.sidekick cite {
+blockquote cite {
+    display: block;
     font-size: 50%;
-    text-align: center;
+    margin-left: 1%;
+    font-size: 1.2rem;
     top: 50%
 }
 
-.sidekick cite:before {
+blockquote cite::before {
     content: ' \2015 '
 }
