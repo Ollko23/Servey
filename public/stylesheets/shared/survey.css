@@ -28,7 +28,7 @@
 .answers,
 .fat {
     margin-top: 1vh;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -44,7 +44,7 @@
 /* btns */
 .btn,
 #counter {
-    margin: 0;
+    /* margin: 0; */
     background-color: #FFFFFF;
     border: 0;
     border-radius: .5rem;
@@ -94,27 +94,26 @@
     background-color: var(--bg-color);
     border-radius: 4px;
     border-width: 0;
-    box-shadow: var(--accent-color) 0 2px 4px, var(--accent-color) 0 7px 13px -3px, var(--second-color) 0 -3px 0 inset;
     color: var(--first-color);
-    cursor: pointer;
-    display: inline-flex;
-    height: 48px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    padding: 1rem 1.5rem;
     text-align: left;
     text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
+    box-shadow: var(--accent-color) 0 2px 4px, var(--accent-color) 0 7px 13px -3px, var(--second-color) 0 -3px 0 inset;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    /* list-style: none; */
+    /* overflow: hidden; */
+    position: relative;
+    transition: box-shadow .15s, transform .15s;
     white-space: nowrap;
     will-change: box-shadow, transform;
-    font-size: 18px;
 }
 
 #submit:hover {
