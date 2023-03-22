@@ -12,7 +12,7 @@
 
 blockquote {
     width: 90vw;
-    margin: 8% auto;
+    margin: 5% auto;
 }
 
 .sidekick {
@@ -20,7 +20,7 @@ blockquote {
     padding-left: 1em;
     border-left: 0.2em solid var(--accent-color);
     font-family: 'Roboto', serif;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1.2em;
     font-weight: 100;
 }

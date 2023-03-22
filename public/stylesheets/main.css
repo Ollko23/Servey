@@ -2,6 +2,7 @@
 @import 'shared/survey.css';
 @import 'shared/thankyou.css';
 
+/* set up */
 *,
 *::before,
 *::after {
@@ -10,23 +11,32 @@
     padding: 0;
 }
 
+html {
+    font-size: 50%;
+}
+
+body {
+    font-size: 1rem;
+}
+
+/*  h */
 h3 {
     text-align: center;
-    margin: 5%;
-
+    /* margin: 5%; */
 }
 
 h4 {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
     padding: 2%;
     margin: 3%;
     box-shadow: 0 1px 3px 0 var(--second-color), 0 1px 2px 0 var(--second-color);
 }
 
 h5 {
-    margin-left: 5%;
-    margin-bottom: 6%;
+    width: 90%;
+    margin: 3% auto;
+    /* text-align: center; */
     text-decoration: underline;
     font-weight: 350;
 }
@@ -35,7 +45,7 @@ h6 {
     margin: 2%;
 }
 
-
+/* links  */
 a {
     text-decoration: none;
     box-shadow: 0 1px 3px 0 var(--accent-color), 0 1px 2px 0 var(--accent-color);
@@ -58,6 +68,7 @@ a:visited {
     background-color: var(--bg-color);
 }
 
+/* other */
 p {
     color: var(--first-color);
     font-weight: bold;
@@ -74,4 +85,16 @@ span {
     margin-left: 3%;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+@media only screen and (min-width: 768px) {
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-size: 1.6rem;
+    }
+
 }
