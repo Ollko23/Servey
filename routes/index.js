@@ -95,8 +95,8 @@ router.get('/:id', async (req, res) => {
         const response = await Response.findById(req.params.id)
         res.render('survey/thankyou', { response: response })
     } catch (err) {
-        console.log("Error getting /:id")
-        console.log(err)
+        // console.log("Error getting /:id")
+        // console.log(err)
         res.redirect('/')
     }
 })
