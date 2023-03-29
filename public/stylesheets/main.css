@@ -58,6 +58,7 @@ a {
 
 a:hover {
     background-color: var(--first-color);
+    color: var(--accent-color);
 }
 
 a:active {

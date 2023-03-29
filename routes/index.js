@@ -10,13 +10,13 @@ router.get("/", (req, res) => {
 // New
 router.get("/new", (req, res) => {
     const questions = {
-        question1: ["Niemiecki", "Hiszpański", "Włoski", "Francuski", "Rosyjski", "Inny"],
+        question1: ["Niemiecki", "Hiszpański", "Włoski", "Francuski", "Rosyjski", "Inny", "Nie dotyczy"],
         question2: ["Niemiecki", "Hiszpański", "Włoski", "Francuski", "Rosyjski", "Portugalski", "Grecki", "Norweski", "Szwedzki", "Fiński", "Mandaryński ", "Japoński", "Koreański", "Arabski", "Turecki", "Hindi", "Inny"],
-        question3: ["Niemiecki", "Hiszpański", "Włoski", "Francuski", "Rosyjski", "Inny"],
-        question4: ["Tak", "Nie"],
-        question5: ["Tak", "Nie"],
-        question6: ["1", "1+", "2", "2+", "3", "3+", "4", "4+", "5", "5+", "6"],
-        question7: ["Rodzice", "Koledzy/koleżanki", "Lubię nauczyciela, który prowadzi przedmiot", "Chęć poznania nowego jezyka", "Jest przydatny w pracy", "Jest przydatny w życiu", "Chcę mieszkać w kraju gdzie jest on ojczysty", "Ładnie brzmi", "Jest łatwy", "Trochę już znam ten jezyk i chciałem/chciałam się go lepiej nauczyć", "Nie ma powodu - coś trzeba było wybrać i tyle", "Inne"],
+        question3: ["Niemiecki", "Hiszpański", "Włoski", "Francuski", "Rosyjski", "Inny", "Nie dotyczy"],
+        question4: ["Tak", "Nie", "Nie dotyczy"],
+        question5: ["Tak", "Nie", "Nie dotyczy"],
+        question6: ["1", "1+", "2", "2+", "3", "3+", "4", "4+", "5", "5+", "6", "Nie dotyczy"],
+        question7: ["Rodzice", "Koledzy/koleżanki", "Lubię nauczyciela, który prowadzi przedmiot", "Chęć poznania nowego jezyka", "Jest przydatny w pracy", "Jest przydatny w życiu", "Chcę mieszkać w kraju gdzie jest on ojczysty", "Ładnie brzmi", "Jest łatwy", "Trochę już znam ten jezyk i chciałem/chciałam się go lepiej nauczyć", "Nie ma powodu - coś trzeba było wybrać i tyle", "Inne", "Nie dotyczy"],
         question8: ["Brzmienie", "Przydatność w życiu codziennym", "Przydatność w pracy", "Łatwość nauczenia się", "Egzotyczność", "Gramatyka", "Popularność", "Prestiż", "Inne"]
     }
     try {
@@ -102,3 +102,18 @@ router.get('/:id', async (req, res) => {
 })
 
 module.exports = router
+
+// functions for analysis
+
+// Q1
+// const counting = async function (answer, answers){
+//     let obj = {}
+//     for(item in answers){
+//     let results = await Response.countDocuments({ answer: item })
+//       obj.item = results
+//     }
+//   console.log(obj)
+//     return obj
+//   }
+
+// Q2
