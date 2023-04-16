@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
     const response = new Response({
         answer1: req.body[1],
         answer2: req.body[2],
-        answer3: req.body[2],
+        answer3: req.body[3],
         answer4: req.body[4],
         answer5: req.body[5],
         answer6: req.body[6],
